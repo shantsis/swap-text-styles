@@ -1,3 +1,14 @@
+#Swap Text Styles
+This is a private figma plugin to test how the use of different font families would appear in a given design. It uses local text styles to identify the font family and styling to swap with. Anyone is free to duplicate this and test it out for their files.
+
+##How to Use
+This plugin relies on text styles for swapping. To get started:
+
+1. Create the text styles for each font family you want to explore. Make sure to have a hierarchy (heading 1, heading 2, etc)
+2. Create a frame for you design
+
+
+
 Below are the steps to get your plugin running. You can also find instructions at:
 
   https://www.figma.com/plugin-docs/setup/
