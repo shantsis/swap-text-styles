@@ -1,0 +1,28 @@
+<h2>Swap Text Styles</h2>
+
+<!-- add all fonts you'd like to swap with. Only one can be swapped at a time-->
+<select id = "font">
+  <option value = "noto">Noto Sans</option>
+  <option value = "notodisplay">Noto Sans Display</option>
+  <option value = "calibri">Calibri</option>
+  <option value = "tahoma">Tahoma</option>
+  <option value = "roboto">Roboto</option>
+  <option value = "verdana">Verdana</option>
+  <option value = "opensans">Open Sans</option>
+  <option value = "montserrat">Montserrat</option>
+  <option value = "sourcesans">Source Sans</option>
+</select>
+<button id="create">Swap</button>
+<button id="cancel">Cancel</button>
+<script>
+
+document.getElementById('create').onclick = () => {
+  const font = document.getElementById('font').value
+  parent.postMessage({ pluginMessage: { type: 'change-font', font } }, '*')
+}
+
+document.getElementById('cancel').onclick = () => {
+  parent.postMessage({ pluginMessage: { type: 'cancel' } }, '*')
+}
+
+</script>

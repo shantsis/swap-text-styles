@@ -1,0 +1,7 @@
+{
+  "name": "Swap Text Styles",
+  "id": "844723998321898199",
+  "api": "1.0.0",
+  "main": "code.js",
+  "ui": "ui.html"
+}
