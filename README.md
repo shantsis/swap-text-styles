@@ -1,51 +1,20 @@
-#Swap Text Styles
-This is a private figma plugin to test how the use of different font families would appear in a given design. It uses local text styles to identify the font family and styling to swap with. Anyone is free to duplicate this and test it out for their files.
+# Swap Text Styles
+This is a private figma plugin to test how the use of different font families would appear in a given design. It uses local text styles to identify the font family and styling to swap with. It's open for anyone to duplicate this and test it out on their files.
 
-##How to Use
+## How to Use
 This plugin relies on text styles for swapping. To get started:
 
 1. Create the text styles for each font family you want to explore. Make sure to have a hierarchy (heading 1, heading 2, etc)
-2. Create a frame for you design
-
-
-
-Below are the steps to get your plugin running. You can also find instructions at:
-
-  https://www.figma.com/plugin-docs/setup/
-
-This plugin template uses Typescript and NPM, two standard tools in creating JavaScript applications.
-
-First, download Node.js which comes with NPM. This will allow you to install TypeScript and other
-libraries. You can find the download link here:
-
-  https://nodejs.org/en/download/
-
-Next, install TypeScript using the command:
-
-  npm install -g typescript
-
-Finally, in the directory of your plugin, get the latest type definitions for the plugin API by running:
-
-  npm install --saveDev @figma/plugin-typings
-
-If you are familiar with JavaScript, TypeScript will look very familiar. In fact, valid JavaScript code
-is already valid Typescript code.
-
-TypeScript adds type annotations to variables. This allows code editors such as Visual Studio Code
-to provide information about the Figma API while you are writing code, as well as help catch bugs
-you previously didn't notice.
-
-For more information, visit https://www.typescriptlang.org/
-
-Using TypeScript requires a compiler to convert TypeScript (code.ts) into JavaScript (code.js)
-for the browser to run.
-
-We recommend writing TypeScript code using Visual Studio code:
-
-1. Download Visual Studio Code if you haven't already: https://code.visualstudio.com/.
-2. Open this directory in Visual Studio Code.
-3. Compile TypeScript to JavaScript: Run the "Terminal > Run Build Task..." menu item,
-    then select "tsc: watch - tsconfig.json". You will have to do this again every time
-    you reopen Visual Studio Code.
-
-That's it! Visual Studio Code will regenerate the JavaScript file every time you save.
+2. Create a design using one of the text styles
+3. Set up your environment to run Figma plugins ([see Figma's documentation](https://www.figma.com/plugin-docs/setup/))
+4. Replace the following areas of the code with your needs:
+  * Add the font families and styles on lines 16-74 in code.ts.
+  * Add the style IDs on lines 93-271 in code.ts. You can find these in the file by opening the console in Figma and running [figma.getLocalTextStyles()](https://www.figma.com/plugin-docs/api/figma/#getlocaltextstyles), then checking the ID for each node.
+  * Adjust the styles on lines 291-353 on code.ts.
+  * Adjusts the languages on lines 5-13 in ui.html.
+ 5. Select the frame(s) and run the plugin!
+ 
+ ## Demo
+ For my file I have 9 fonts ranging from heading 1 to tiny body. This example shows flipping from Noto Sans to Tahoma.
+ 
+ ![GIF of using the plugin](https://github.com/shantsis/swap-it-sketch/blob/initial/demo.gif)
