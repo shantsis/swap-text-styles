@@ -17,4 +17,4 @@ This plugin relies on text styles for swapping. To get started:
  ## Demo
  For my file I have 9 fonts ranging from heading 1 to tiny body. This example shows flipping from Noto Sans to Tahoma.
  
- ![GIF of using the plugin](https://github.com/shantsis/swap-text-styles/blob/initial/demo.gif)
+ ![GIF of using the plugin](https://github.com/shantsis/swap-text-styles/blob/master/demo.gif)
